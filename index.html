@@ -1,0 +1,35 @@
+<main>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress-bar" style="color:black !important;">LOADING</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input id="image-selector" class="form-control border-0" type="file">
+            </div>
+            <div class="col-6">
+                <button id="predict-button" class="btn btn-dark float-end">Predict</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h2 class="ml-3">Predictions</h2>
+                <ol id="prediction-list"></ol>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="ml-3">Image</h2>
+                <img id="selected-image" class="ml-3" src="">
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="https://joelbooks.com/ai/cover-reviewer-ai-tfjs/imagenet_classes.js"></script>
+<script src="https://joelbooks.com/ai/predict.js"></script>
